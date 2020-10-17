@@ -58,6 +58,7 @@ Plug 'junegunn/fzf.vim'
 " endif
 " let g:deoplete#enable_at_startup = 1
 " 自动补全插件,有一些前置依赖
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 noremap <leader>g :NERDTreeFind<cr>
@@ -87,6 +88,3 @@ nmap s <Plug>(easymotion-overwin-f2)
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
 
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
