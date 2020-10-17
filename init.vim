@@ -1,7 +1,7 @@
 " e常用设置 设置打开行号 
 set number
 let mapleader=","
-
+set guifont=JetBrains\ Mono:h14
 "按f2进入高亮模式
 set pastetoggle=<F2>
 "剪贴板同步
@@ -25,6 +25,11 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 " 连个call之间是插件列表
 "这个插件添加一个漂亮的黑色主题
 Plug 'joshdick/onedark.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" 代码自动补全插件
+Plug 'ryanoasis/vim-devicons'
+Plug 'luochen1990/rainbow'
+let g:rainbow_active = 1 
 "Plug 'w0ng/vim-hybrid'
 Plug 'morhetz/gruvbox'
 "文件树显示插件
@@ -58,7 +63,6 @@ Plug 'junegunn/fzf.vim'
 " endif
 " let g:deoplete#enable_at_startup = 1
 " 自动补全插件,有一些前置依赖
-Plug 'tpope/vim-fugitive'
 call plug#end()
 
 noremap <leader>g :NERDTreeFind<cr>
